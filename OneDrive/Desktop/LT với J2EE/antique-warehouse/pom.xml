@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.13</version>
         <relativePath/>
     </parent>
 
@@ -21,6 +21,10 @@
     <properties>
         <java.version>25</java.version>
         <lombok.version>1.18.38</lombok.version>
+        <!-- CVE fix: tomcat.version overrides BOM default (10.1.42) to 10.1.52 which fixes all Tomcat CVEs.
+             Spring Boot 3.3.13 already bundles spring-framework 6.1.21, spring-security 6.3.10
+             (fixes CVE-2025-22228), and json-smart 2.5.2 natively. -->
+        <tomcat.version>10.1.52</tomcat.version>
     </properties>
 
     <dependencies>
