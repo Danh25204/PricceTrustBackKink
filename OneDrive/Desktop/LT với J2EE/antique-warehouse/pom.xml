@@ -20,11 +20,17 @@
 
     <properties>
         <java.version>25</java.version>
+        <!-- Spring Boot 3.3.x bundles ASM 9.7.1 (in spring-core) which supports up to
+             Java 24 bytecode only. Targeting release=21 lets the app run on JDK 25 JVM
+             while producing class files that Spring's internal ASM can parse. -->
+        <maven.compiler.release>21</maven.compiler.release>
         <lombok.version>1.18.38</lombok.version>
         <!-- CVE fix: tomcat.version overrides BOM default (10.1.42) to 10.1.52 which fixes all Tomcat CVEs.
              Spring Boot 3.3.13 already bundles spring-framework 6.1.21, spring-security 6.3.10
              (fixes CVE-2025-22228), and json-smart 2.5.2 natively. -->
         <tomcat.version>10.1.52</tomcat.version>
+        <!-- CVE fix: assertj 3.27.7 fixes CVE-2026-24400 (XXE in isXmlEqualTo) -->
+        <assertj.version>3.27.7</assertj.version>
     </properties>
 
     <dependencies>
@@ -122,6 +128,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.example.antique.AntiqueWarehouseApplication</mainClass>
                     <!-- Loại Lombok khỏi jar deploy cuối cùng -->
                     <excludes>
                         <exclude>
