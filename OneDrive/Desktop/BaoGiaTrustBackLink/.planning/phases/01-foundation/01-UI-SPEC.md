@@ -51,15 +51,18 @@ Exceptions:
 
 All sizes are CSS custom properties declared in `base.css`. `font-display: swap` is mandatory on all `@font-face` declarations (ARCHITECTURE.md mobile rule 3).
 
+Maximum 4 sizes are declared. Subheadings (previously 20px) are dropped as a distinct size level — pricing card tier names and section subheadings use `--text-base` at `font-weight: 600` for visual distinction without a separate size token.
+
 | Role | Size | CSS Property | Weight | Line Height | Font Family | Source |
 |------|------|--------------|--------|-------------|-------------|--------|
-| Body | 16px | `--text-body: 16px` | 400 (regular) | 1.6 | Be Vietnam Pro | Default + Vietnamese market legibility |
-| Label / Small | 13px | `--text-label: 13px` | 400 (regular) | 1.4 | Be Vietnam Pro | Card metadata, per-unit price |
-| Subheading | 20px | `--text-sub: 20px` | 600 (semibold) | 1.3 | Be Vietnam Pro | Card title, section subheads |
-| Heading | 28px | `--text-heading: 28px` | 700 (bold) | 1.2 | Playfair Display | Section headings (`<h2>`) |
-| Display | 40px | `--text-display: 40px` | 700 (bold) | 1.1 | Playfair Display | Hero `<h1>` tagline |
+| Small / metadata | 14px | `--text-sm: 14px` | 400 (regular) | 1.4 | Be Vietnam Pro | Per-unit price, badge text, card metadata |
+| Body | 16px | `--text-base: 16px` | 400 (regular) | 1.6 | Be Vietnam Pro | Body copy, bullet points, card descriptions |
+| Heading | 28px | `--text-lg: 28px` | 700 (bold) | 1.2 | Playfair Display | Section headings (`<h2>`), card titles at semibold |
+| Display | 40px | `--text-xl: 40px` | 700 (bold) | 1.1 | Playfair Display | Hero `<h1>` tagline |
 
 Weights declared: 400 (regular) and 600/700 (semibold/bold). Two weights only per font family. Be Vietnam Pro uses 400 + 600; Playfair Display uses 700 only.
+
+Card tier names and section subheadings: use `--text-base` (16px) at `font-weight: 600` — no separate size token.
 
 Google Fonts import pattern (to be placed in `base.css`):
 ```
@@ -101,7 +104,7 @@ Second semantic color:
 
 ## Featured Card Token Contract
 
-Phase 1 must declare these tokens exactly so Phase 3 CSS can consume them without ambiguity.
+Phase 1 must declare these tokens exactly so Phase 3 CSS can consume them without ambiguity. The featured pricing card (with `--card-featured-border` and `--card-featured-shadow`) is the intended primary visual anchor of the pricing sections.
 
 | Token | Value | CSS Custom Property | Source |
 |-------|-------|---------------------|--------|
