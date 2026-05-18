@@ -28,7 +28,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
   2. All filenames and folder names are lowercase; all asset paths use `./assets/` relative format
   3. `.nojekyll` file exists at repo root; pushing to GitHub Pages produces a live (even empty) URL with no 404s
   4. CSS variables for featured-card gold border/glow and non-featured card border are defined and referenceable
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 01-01: Create folder structure, base.css with design tokens, Google Fonts imports
@@ -44,7 +44,7 @@ Plans:
   3. Three service cards (Backlink, Blog Comment, Entity) each have 2–3 line Vietnamese descriptions; Entity card includes the mandatory 2-sentence explanation
   4. All 11 pricing cards (4 Backlink + 4 Blog Comment + 3 Entity) are rendered with correct tier names, quantities, prices (format "500K"), per-unit prices, feature bullets, and "Nổi Bật" text markers on the specified Standard tiers
   5. Every "Dat ngay" button and CTA uses `tg://resolve?domain=trustbacklink` with `https://t.me/trustbacklink` fallback; pre-filled `?text=` messages are present on each card button; floating sticky CTA button and Contact section exist in DOM
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 02-01: Header, footer, hero section HTML
@@ -61,7 +61,7 @@ Plans:
   2. Featured "Nổi Bật" cards have gold border (`1px solid #FFD700`), gold glow (`box-shadow: 0 0 24px rgba(255,215,0,0.35)`), and an absolute-positioned badge; non-featured cards have `1px solid #1E1E1E` and no glow
   3. Pricing cards lift visually on hover (`transform: translateY(-4px)` + box-shadow change) via CSS only — no JavaScript required
   4. The dark overlay (`rgba(0,0,0,0.65)`) layer exists between the canvas placeholder z-index and all text content; text is legible on gold-black background
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 03-01: Layout CSS — grid, sections, header/footer, hero
@@ -77,7 +77,7 @@ Plans:
   3. On devices without WebGL support the canvas is hidden and the CSS gradient fallback displays — no black rectangle, no JS error
   4. Particle count is 1000 on desktop and 400 on mobile; pixel ratio is capped at 1.5; the scene uses demand-based rendering (no unconditional RAF loop running at all times)
   5. The `scene.js` module exports `init()` and `resize()` and does NOT call `requestAnimationFrame` directly — it can be tested standalone before GSAP is wired
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 04-01: scene.js — Three.js particle geometry, WebGL detection, demand-based render loop, mobile/WebGL fallbacks
@@ -93,7 +93,7 @@ Plans:
   3. Floating Telegram button slides in from the right edge 3 seconds after page load
   4. `gsap.ticker.add(() => renderer.render(scene, camera))` is the sole render trigger for Three.js — no separate `requestAnimationFrame` call exists in scene.js
   5. With `prefers-reduced-motion: reduce` active: CSS animation properties are disabled via media query AND GSAP skips all tweens — verified by toggling OS accessibility setting
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 05-01: GSAP integration — connect ticker to Three.js, hero load animation
@@ -109,7 +109,7 @@ Plans:
   2. Total page weight (HTML + CSS + JS + fonts + assets, excluding Three.js CDN) is at or below 800 KB measured by browser DevTools Network tab
   3. Pricing content (all cards, prices, CTA buttons) is visible in the browser within 1 second on a simulated mobile 4G connection (Lighthouse or DevTools throttle)
   4. All "Dat ngay" Telegram deeplinks open the correct Telegram chat on both Android and iOS; the pre-filled message `Toi+muon+mua+goi+[package name]` appears in the message field
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 06-01: Create OG image, add Open Graph meta tags
