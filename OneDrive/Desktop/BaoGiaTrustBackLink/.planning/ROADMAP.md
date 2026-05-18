@@ -24,7 +24,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 **Depends on**: Nothing (first phase)
 **Requirements**: DESIGN-01, DESIGN-02, DESIGN-03, DESIGN-04, DESIGN-05, DESIGN-06, PERF-07, PERF-08, PERF-09
 **Success Criteria** (what must be TRUE):
-  1. `base.css` exists with all gold-black CSS custom properties (`--gold-bright`, `--gold-mid`, `--black-rich`, `--black-card`, `--text-primary`) and font imports for Playfair Display + Be Vietnam Pro with `&subset=vietnamese`
+  1. `base.css` exists with all gold-black CSS custom properties (`--gold-bright`, `--gold-mid`, `--black-rich`, `--black-card`, `--text-primary`) and font imports for Playfair Display + Be Vietnam Pro; Vietnamese glyphs are served via CSS2 API unicode-range blocks automatically (no `&subset=` parameter required)
   2. All filenames and folder names are lowercase; all asset paths use `./assets/` relative format
   3. `.nojekyll` file exists at repo root; pushing to GitHub Pages produces a live (even empty) URL with no 404s
   4. CSS variables for featured-card gold border/glow and non-featured card border are defined and referenceable

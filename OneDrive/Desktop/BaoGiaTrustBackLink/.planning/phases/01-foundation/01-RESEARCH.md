@@ -545,22 +545,25 @@ body {
 
 ---
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Google Fonts `&subset=vietnamese` in CSS2 API — does it provide additional benefit?**
    - What we know: CSS2 API automatically serves unicode-range blocks covering Vietnamese. The `&subset=` parameter is not documented in the CSS2 API docs.
    - What's unclear: Whether explicitly adding `&subset=vietnamese` forces a different code path or larger subset to be pre-fetched.
    - Recommendation: Use the URL without `&subset=`. After Phase 2 (when Vietnamese text exists on the page), verify by opening DevTools Network and filtering for `fonts.gstatic.com` — Vietnamese-range font file requests confirm the subset is loaded.
+   - **RESOLVED:** `&subset=` is a legacy CSS1 API parameter. The CSS2 API handles Vietnamese automatically via `unicode-range` blocks served per browser request — no explicit subset parameter is needed or documented. The canonical CSS2 URL omits `&subset=vietnamese`. Plans and ROADMAP updated to reflect this. [SOURCE: developers.google.com/fonts/docs/css2; Pattern 2 in this document]
 
 2. **GitHub Pages source configuration — root or `/docs` folder?**
    - What we know: The project currently has no GitHub Pages configuration (blank repo). STATE.md flags this as an open question.
    - What's unclear: Whether the repo owner will use `main` branch root, `gh-pages` branch, or `/docs` folder.
    - Recommendation: Default to `main` branch root deployment. `.nojekyll` placed at repo root works for all three source configurations. Relative paths work regardless of source folder choice.
+   - **RESOLVED:** Relative `./assets/` paths work correctly regardless of whether deployment is at root, sub-path, or `/docs` folder. No configuration-specific path handling is required. Plan 01-02 defaults to `main` branch root; this decision carries no deployment risk.
 
 3. **Logo asset availability**
    - What we know: STATE.md flags "Logo asset confirmed available?" as a blocker for Phase 2.
    - What's unclear: Whether `assets/images/logo.svg` exists or needs to be created.
    - Recommendation: Phase 1 creates the `assets/images/` directory. Phase 2 plan must address logo source — placeholder `<div>` fallback if SVG is not ready.
+   - **RESOLVED:** Logo is deferred to Phase 2. Phase 1 creates `assets/images/.gitkeep` as a placeholder so the directory is tracked in git. Phase 2 plan will address logo sourcing and include a `<div class="logo-placeholder">` fallback if the SVG is not ready at that time.
 
 ---
 
