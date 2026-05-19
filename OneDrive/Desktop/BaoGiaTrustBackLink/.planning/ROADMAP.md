@@ -64,7 +64,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Layout CSS: wire CSS links in index.html, header, hero, sections, services grid, footer, dark overlay
+- [x] 03-01-PLAN.md — Layout CSS: wire CSS links in index.html, header, hero, sections, services grid, footer, dark overlay
 - [ ] 03-02-PLAN.md — Pricing card components: featured treatment, badge, btn-cta, floating CTA, hover transitions (ANIM-07)
 
 ### Phase 4: Three.js Scene
@@ -123,7 +123,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-05-19 |
 | 2. HTML Skeleton | 4/4 | Complete    | 2026-05-19 |
-| 3. CSS Styling | 0/2 | Not started | - |
+| 3. CSS Styling | 1/2 | In Progress|  |
 | 4. Three.js Scene | 0/2 | Not started | - |
 | 5. GSAP Animations | 0/3 | Not started | - |
 | 6. Polish & Deployment | 0/2 | Not started | - |
