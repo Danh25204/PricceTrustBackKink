@@ -12,7 +12,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 
 - [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
 - [x] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS (completed 2026-05-19)
-- [ ] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects
+- [x] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects (completed 2026-05-19)
 - [ ] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency
 - [ ] **Phase 5: GSAP Animations** - Scroll-triggered entrance animations wired via GSAP ticker into Three.js; reduced-motion support
 - [ ] **Phase 6: Polish & Deployment** - OG image, page weight audit, Telegram deeplink verification, GitHub Pages live
@@ -65,7 +65,7 @@ Plans:
 
 Plans:
 - [x] 03-01-PLAN.md — Layout CSS: wire CSS links in index.html, header, hero, sections, services grid, footer, dark overlay
-- [ ] 03-02-PLAN.md — Pricing card components: featured treatment, badge, btn-cta, floating CTA, hover transitions (ANIM-07)
+- [x] 03-02-PLAN.md — Pricing card components: featured treatment, badge, btn-cta, floating CTA, hover transitions (ANIM-07)
 
 ### Phase 4: Three.js Scene
 **Goal**: Gold floating particles run as a background scene that is fully isolated from layout and content — it can be removed without breaking a single pixel of the page; mobile fallback is in place
@@ -123,7 +123,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-05-19 |
 | 2. HTML Skeleton | 4/4 | Complete    | 2026-05-19 |
-| 3. CSS Styling | 1/2 | In Progress|  |
+| 3. CSS Styling | 2/2 | Complete   | 2026-05-19 |
 | 4. Three.js Scene | 0/2 | Not started | - |
 | 5. GSAP Animations | 0/3 | Not started | - |
 | 6. Polish & Deployment | 0/2 | Not started | - |
