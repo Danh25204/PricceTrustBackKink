@@ -359,5 +359,39 @@
     <span aria-hidden="true">✈</span>
     <span class="sr-only">Nhắn Telegram ngay</span>
   </a>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <script type="module">
+    import { init, resize, render } from './assets/js/scene.js';
+
+    function bootstrap() {
+      const canvas = document.getElementById('particle-canvas');
+
+      // WebGL check before init — skip if unavailable
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (!gl) {
+        canvas.classList.add('hidden');
+        return;
+      }
+
+      init(canvas);
+      resize();
+      window.addEventListener('resize', resize);
+
+      // TODO Phase 5: remove this rAF loop and replace with gsap.ticker.add(render)
+      function loop() {
+        render();
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bootstrap);
+    } else {
+      bootstrap();
+    }
+  </script>
 </body>
 </html>
