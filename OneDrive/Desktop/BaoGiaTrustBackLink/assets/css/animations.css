@@ -1,0 +1,39 @@
+/* ============================================================
+   animations.css — BaoGia TrustBackLink
+   Transition timing and transform states only.
+   Base styles live in components.css.
+   prefers-reduced-motion is handled in base.css Block 6 —
+   do NOT redeclare it here.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Pricing card hover lift — ANIM-07
+   Uses --card-hover-lift token (translateY(-4px))
+   ------------------------------------------------------------ */
+.pricing-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: var(--card-hover-lift);
+  box-shadow: 0 8px 32px var(--gold-glow-dim);
+}
+
+.pricing-card--featured:hover {
+  transform: var(--card-hover-lift);
+  box-shadow: 0 8px 40px var(--gold-glow);
+}
+
+/* ------------------------------------------------------------
+   Floating CTA transition
+   ------------------------------------------------------------ */
+#cta-float {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ------------------------------------------------------------
+   Button transition
+   ------------------------------------------------------------ */
+.btn-cta {
+  transition: opacity 0.2s ease;
+}

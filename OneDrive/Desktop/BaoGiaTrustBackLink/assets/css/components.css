@@ -1,0 +1,162 @@
+/* ============================================================
+   components.css — BaoGia TrustBackLink
+   Pricing cards, featured treatment, badge, CTA buttons,
+   floating CTA. All colors via var() — no hardcoded hex.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   SECTION 1: BASE PRICING CARD
+   ------------------------------------------------------------ */
+.pricing-card {
+  position: relative;
+  background: var(--card-bg);
+  border: var(--card-default-border);
+  border-radius: 8px;
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* ------------------------------------------------------------
+   SECTION 2: FEATURED CARD MODIFIER
+   DESIGN-05
+   ------------------------------------------------------------ */
+.pricing-card--featured {
+  border: var(--card-featured-border);
+  box-shadow: var(--card-featured-shadow);
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------
+   SECTION 3: FEATURED BADGE
+   ------------------------------------------------------------ */
+.badge-featured {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: var(--gold-bright);
+  color: var(--black-rich);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ------------------------------------------------------------
+   SECTION 4: CARD CONTENT ELEMENTS
+   ------------------------------------------------------------ */
+.pricing-card__tier {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+  padding-right: var(--space-2xl);
+}
+
+.price {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--gold-bright);
+  line-height: 1;
+}
+
+.price strong {
+  font-size: inherit;
+  color: inherit;
+}
+
+.price-per-unit {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.features li {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.features li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dim);
+}
+
+/* ------------------------------------------------------------
+   SECTION 5: CTA BUTTONS
+   CTA-01: minimum touch target via --cta-touch
+   ------------------------------------------------------------ */
+.btn-cta {
+  display: block;
+  text-align: center;
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-mid) 100%);
+  color: var(--black-rich);
+  font-weight: 600;
+  font-size: var(--text-base);
+  border-radius: 4px;
+  text-decoration: none;
+  min-height: var(--cta-touch);
+  line-height: var(--cta-touch);
+  margin-top: auto;
+}
+
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+.btn-cta--large {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--text-lg);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------
+   SECTION 6: FLOATING CTA
+   CTA-01: fixed bottom-right, touch target 56px
+   ------------------------------------------------------------ */
+#cta-float {
+  position: fixed;
+  bottom: var(--space-xl);
+  right: var(--space-xl);
+  z-index: var(--z-float);
+  width: var(--cta-touch);
+  height: var(--cta-touch);
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-mid) 100%);
+  color: var(--black-rich);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  text-decoration: none;
+  box-shadow: 0 4px 16px var(--gold-glow);
+}
+
+#cta-float:hover {
+  transform: scale(1.08);
+}
+
+/* ------------------------------------------------------------
+   SECTION 7: CONTACT NOTE
+   BEM: .contact__note (as used in index.html)
+   ------------------------------------------------------------ */
+.contact__note {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  margin-top: var(--space-md);
+}
