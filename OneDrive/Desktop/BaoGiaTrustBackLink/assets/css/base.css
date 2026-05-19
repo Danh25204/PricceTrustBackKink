@@ -1,0 +1,126 @@
+/* ============================================================
+   base.css — BaoGia TrustBackLink
+   Design token contract for all phases.
+   Token names declared here are load-bearing — do not rename
+   after Phase 1 is merged.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Block 1: COLORS
+   ------------------------------------------------------------ */
+:root {
+  /* Core palette — DESIGN-01 */
+  --gold-bright:   #FFD700;
+  --gold-mid:      #C9A227;
+  --gold-dim:      #8B6914;
+  --black-rich:    #0A0A0A;
+  --black-card:    #111111;
+  --black-border:  #1E1E1E;
+  --text-primary:  #F5F0E8;
+  --text-muted:    #8A8070;
+
+  /* Overlay — DESIGN-02 */
+  --overlay-dark:  rgba(0, 0, 0, 0.65);
+
+  /* Glow variants */
+  --gold-glow:     rgba(255, 215, 0, 0.35);
+  --gold-glow-dim: rgba(255, 215, 0, 0.15);
+
+  /* Error state */
+  --color-error:   #FF4444;
+}
+
+/* ------------------------------------------------------------
+   Block 2: SPACING
+   ------------------------------------------------------------ */
+:root {
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   32px;
+  --space-2xl:  48px;
+  --space-3xl:  64px;
+
+  /* Floating CTA minimum touch target — CTA-01 */
+  --cta-touch:  56px;
+}
+
+/* ------------------------------------------------------------
+   Block 3: TYPOGRAPHY
+   ------------------------------------------------------------ */
+:root {
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   28px;
+  --text-xl:   40px;
+}
+
+/* ------------------------------------------------------------
+   Block 4: Z-INDEX STACK
+   ------------------------------------------------------------ */
+:root {
+  --z-canvas:  0;
+  --z-overlay: 1;
+  --z-content: 2;
+  --z-float:   100;
+  --z-modal:   200;
+}
+
+/* ------------------------------------------------------------
+   Block 5: CARD TOKENS
+   DESIGN-05: featured card border and shadow
+   DESIGN-06: non-featured card border
+   ------------------------------------------------------------ */
+:root {
+  --card-featured-border: 1px solid var(--gold-bright);
+  --card-featured-shadow: 0 0 24px var(--gold-glow);
+  --card-default-border:  1px solid var(--black-border);
+  --card-bg:              linear-gradient(135deg, var(--black-card) 0%, #0D0D0D 100%);
+  --card-hover-lift:      translateY(-4px);
+}
+
+/* ------------------------------------------------------------
+   Block 6: BREAKPOINTS
+   NOTE: --bp-mobile is documentation only. Do NOT use
+   var(--bp-mobile) inside @media conditions — CSS custom
+   properties are not supported in media query conditions.
+   Always use the literal value 768px in @media queries.
+   ------------------------------------------------------------ */
+:root {
+  --bp-mobile: 768px;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--black-rich);
+  color: var(--text-primary);
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   REDUCED MOTION
+   Disables all CSS animations and transitions when the user
+   has opted into reduced motion at the OS level (ANIM-08).
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
