@@ -10,7 +10,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 - Integer phases (1–6): Planned milestone work executed in order
 - Decimal phases (e.g., 3.1): Urgent insertions created via `/gsd:phase insert`
 
-- [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
+- [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
 - [ ] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS
 - [ ] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects
 - [ ] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency
@@ -44,13 +44,13 @@ Plans:
   3. Three service cards (Backlink, Blog Comment, Entity) each have 2–3 line Vietnamese descriptions; Entity card includes the mandatory 2-sentence explanation
   4. All 11 pricing cards (4 Backlink + 4 Blog Comment + 3 Entity) are rendered with correct tier names, quantities, prices (format "500K"), per-unit prices, feature bullets, and "Nổi Bật" text markers on the specified Standard tiers
   5. Every "Dat ngay" button and CTA uses `tg://resolve?domain=trustbacklink` with `https://t.me/trustbacklink` fallback; pre-filled `?text=` messages are present on each card button; floating sticky CTA button and Contact section exist in DOM
-**Plans**: 2 plans
+**Plans**: 4 plans
 
 Plans:
-- [ ] 02-01: Header, footer, hero section HTML
-- [ ] 02-02: Services section with 3 service cards
-- [ ] 02-03: Backlink and Blog Comment pricing sections with all tiers
-- [ ] 02-04: Entity pricing section + Contact CTA section + floating Telegram button
+- [ ] 02-01-PLAN.md — Header, footer, hero section HTML + floating CTA anchor
+- [ ] 02-02-PLAN.md — Services section with 3 service cards (Backlink, Blog Comment, Entity)
+- [ ] 02-03-PLAN.md — Backlink and Blog Comment pricing sections with all tiers (8 cards)
+- [ ] 02-04-PLAN.md — Entity pricing section (3 cards) + Contact CTA section + close main
 
 ### Phase 3: CSS Styling
 **Goal**: The page looks like a luxury gold-black pricing page — all layout, card grid, featured card treatment, and CSS hover effects are complete; page is shippable as MVP without any JavaScript animation
