@@ -11,7 +11,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 - Decimal phases (e.g., 3.1): Urgent insertions created via `/gsd:phase insert`
 
 - [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
-- [ ] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS
+- [x] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS (completed 2026-05-19)
 - [ ] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects
 - [ ] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency
 - [ ] **Phase 5: GSAP Animations** - Scroll-triggered entrance animations wired via GSAP ticker into Three.js; reduced-motion support
@@ -47,10 +47,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Header, footer, hero section HTML + floating CTA anchor
-- [ ] 02-02-PLAN.md — Services section with 3 service cards (Backlink, Blog Comment, Entity)
-- [ ] 02-03-PLAN.md — Backlink and Blog Comment pricing sections with all tiers (8 cards)
-- [ ] 02-04-PLAN.md — Entity pricing section (3 cards) + Contact CTA section + close main
+- [x] 02-01-PLAN.md — Header, footer, hero section HTML + floating CTA anchor
+- [x] 02-02-PLAN.md — Services section with 3 service cards (Backlink, Blog Comment, Entity)
+- [x] 02-03-PLAN.md — Backlink and Blog Comment pricing sections with all tiers (8 cards)
+- [x] 02-04-PLAN.md — Entity pricing section (3 cards) + Contact CTA section + close main
 
 ### Phase 3: CSS Styling
 **Goal**: The page looks like a luxury gold-black pricing page — all layout, card grid, featured card treatment, and CSS hover effects are complete; page is shippable as MVP without any JavaScript animation
@@ -122,7 +122,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-05-19 |
-| 2. HTML Skeleton | 0/4 | Not started | - |
+| 2. HTML Skeleton | 4/4 | Complete    | 2026-05-19 |
 | 3. CSS Styling | 0/2 | Not started | - |
 | 4. Three.js Scene | 0/2 | Not started | - |
 | 5. GSAP Animations | 0/3 | Not started | - |
