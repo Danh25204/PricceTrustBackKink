@@ -1,3 +1,19 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: executing
+stopped_at: "Completed 01-02-PLAN.md — .nojekyll added; awaiting GitHub Pages human verification (Task 2 checkpoint)"
+last_updated: "2026-05-19T11:42:00Z"
+last_activity: 2026-05-19
+progress:
+  total_phases: 6
+  completed_phases: 1
+  total_plans: 2
+  completed_plans: 2
+  percent: 17
+---
+
 # Project State: BaoGia TrustBackLink
 
 ## Project Reference
@@ -10,15 +26,16 @@ See: .planning/PROJECT.md (updated 2026-05-18)
 ## Current Position
 
 Phase: 1 of 6 (Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing — Plan 01 complete, Plan 02 pending
-Last activity: 2026-05-19 — Plan 01-01 executed: base.css design tokens, index.html scaffold, folder structure
+Plan: 2 of 2 in current phase
+Status: Ready to execute
+Last activity: 2026-05-19
 
-Progress: [█░░░░░░░░░] 8% (1/12 plans complete)
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
+
 - Total plans completed: 1
 - Average duration: 12 min
 - Total execution time: 0.2 hours
@@ -32,6 +49,7 @@ Progress: [█░░░░░░░░░] 8% (1/12 plans complete)
 **Recent Trend:** 1 plan completed
 
 *Updated after each plan completion*
+| Phase 01-foundation P02 | 5min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -47,6 +65,7 @@ Recent decisions affecting current work:
 - Plan 01-01: Token names in base.css are frozen contract — no renames after merge; all downstream phases use var(--name) exactly
 - Plan 01-01: Google Fonts CSS2 API omits &subset=vietnamese — CSS2 serves unicode-range automatically
 - Plan 01-01: --bp-mobile token declared for docs only; literal 768px used in all @media conditions
+- Plan 01-02: .nojekyll committed before first push — Jekyll bypass permanent for all future phases
 
 ### Pending Todos
 
@@ -67,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-19
-Stopped at: Completed 01-01-PLAN.md — design tokens, folder structure, index.html scaffold
-Resume file: .planning/phases/01-foundation/01-02-PLAN.md
+Last session: 2026-05-19T11:42:00Z
+Stopped at: "Completed 01-02-PLAN.md — .nojekyll added; awaiting GitHub Pages human verification (Task 2 checkpoint)"
+Resume file: None

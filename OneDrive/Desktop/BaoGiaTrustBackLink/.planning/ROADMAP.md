@@ -10,7 +10,7 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 - Integer phases (1–6): Planned milestone work executed in order
 - Decimal phases (e.g., 3.1): Urgent insertions created via `/gsd:phase insert`
 
-- [ ] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure
+- [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
 - [ ] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS
 - [ ] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects
 - [ ] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency
@@ -31,8 +31,8 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Create folder structure, base.css with design tokens, Google Fonts imports
-- [ ] 01-02: Add .nojekyll, verify GitHub Pages deployment pipeline
+- [x] 01-01: Create folder structure, base.css with design tokens, Google Fonts imports
+- [x] 01-02: Add .nojekyll, verify GitHub Pages deployment pipeline
 
 ### Phase 2: HTML Skeleton
 **Goal**: Every piece of pricing content is hardcoded in HTML and readable in a browser with zero JavaScript and zero external CSS — the page works as a functional price list before any styling or animation
@@ -121,7 +121,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 2/2 | Complete   | 2026-05-19 |
 | 2. HTML Skeleton | 0/4 | Not started | - |
 | 3. CSS Styling | 0/2 | Not started | - |
 | 4. Three.js Scene | 0/2 | Not started | - |

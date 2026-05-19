@@ -84,7 +84,7 @@
 - [ ] **PERF-06**: GSAP sở hữu RAF loop; Three.js render qua `gsap.ticker.add()`
 - [x] **PERF-07**: Tất cả filenames và folder names viết thường (lowercase)
 - [x] **PERF-08**: Tất cả asset paths là relative (`./assets/`) không phải root-relative
-- [ ] **PERF-09**: `.nojekyll` file tại root repo
+- [x] **PERF-09**: `.nojekyll` file tại root repo
 - [ ] **PERF-10**: Total page weight ≤800 KB; pricing content visible <1 giây
 
 ### Pricing Data (Mẫu — cần cập nhật)
