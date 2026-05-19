@@ -64,8 +64,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Layout CSS — grid, sections, header/footer, hero
-- [ ] 03-02: Pricing card component styles — featured vs non-featured, hover effect, mobile responsive
+- [ ] 03-01-PLAN.md — Layout CSS: wire CSS links in index.html, header, hero, sections, services grid, footer, dark overlay
+- [ ] 03-02-PLAN.md — Pricing card components: featured treatment, badge, btn-cta, floating CTA, hover transitions (ANIM-07)
 
 ### Phase 4: Three.js Scene
 **Goal**: Gold floating particles run as a background scene that is fully isolated from layout and content — it can be removed without breaking a single pixel of the page; mobile fallback is in place
