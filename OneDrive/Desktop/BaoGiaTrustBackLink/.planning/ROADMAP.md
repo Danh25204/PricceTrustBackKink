@@ -80,8 +80,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: scene.js — Three.js particle geometry, WebGL detection, demand-based render loop, mobile/WebGL fallbacks
-- [ ] 04-02: Canvas positioning, overlay layer, mobile breakpoint disable, pixel ratio cap
+- [ ] 04-01-PLAN.md — scene.js: Three.js particle geometry, WebGL detection, demand-based render control, mobile/WebGL fallbacks, init/resize/render exports
+- [ ] 04-02-PLAN.md — Canvas integration: inject canvas into index.html, CSS positioning (fixed/z-index 0/pointer-events none), mobile radial-gradient fallback on hero, scene.js script tag
 
 ### Phase 5: GSAP Animations
 **Goal**: All entrance animations play once on scroll via GSAP ScrollTrigger; GSAP owns the RAF loop and Three.js renders inside it; reduced-motion users see no animations
