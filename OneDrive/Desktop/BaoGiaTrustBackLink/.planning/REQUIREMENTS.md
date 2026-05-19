@@ -56,12 +56,12 @@
 
 ### Design — Gold-Black Luxury
 
-- [ ] **DESIGN-01**: CSS custom properties: `--gold-bright: #FFD700`, `--gold-mid: #C9A227`, `--black-rich: #0A0A0A`, `--black-card: #111111`, `--text-primary: #F5F0E8`
-- [ ] **DESIGN-02**: `rgba(0,0,0,0.65)` dark overlay giữa Three.js canvas và tất cả text content
-- [ ] **DESIGN-03**: Font headings: Playfair Display (Google Fonts với `&subset=vietnamese`)
-- [ ] **DESIGN-04**: Font body: Be Vietnam Pro (Google Fonts với `&subset=vietnamese`)
-- [ ] **DESIGN-05**: Featured card: `border: 1px solid #FFD700`, `box-shadow: 0 0 24px rgba(255,215,0,0.35)`, badge "Nổi Bật" absolute top-right
-- [ ] **DESIGN-06**: Non-featured cards: `border: 1px solid #1E1E1E`, no glow
+- [x] **DESIGN-01**: CSS custom properties: `--gold-bright: #FFD700`, `--gold-mid: #C9A227`, `--black-rich: #0A0A0A`, `--black-card: #111111`, `--text-primary: #F5F0E8`
+- [x] **DESIGN-02**: `rgba(0,0,0,0.65)` dark overlay giữa Three.js canvas và tất cả text content
+- [x] **DESIGN-03**: Font headings: Playfair Display (Google Fonts với `&subset=vietnamese`)
+- [x] **DESIGN-04**: Font body: Be Vietnam Pro (Google Fonts với `&subset=vietnamese`)
+- [x] **DESIGN-05**: Featured card: `border: 1px solid #FFD700`, `box-shadow: 0 0 24px rgba(255,215,0,0.35)`, badge "Nổi Bật" absolute top-right
+- [x] **DESIGN-06**: Non-featured cards: `border: 1px solid #1E1E1E`, no glow
 
 ### Animation — GSAP
 
@@ -82,8 +82,8 @@
 - [ ] **PERF-04**: Particle count: 1000 desktop, 400 mobile (<768px)
 - [ ] **PERF-05**: WebGL feature detection — canvas hide + CSS gradient fallback nếu không support
 - [ ] **PERF-06**: GSAP sở hữu RAF loop; Three.js render qua `gsap.ticker.add()`
-- [ ] **PERF-07**: Tất cả filenames và folder names viết thường (lowercase)
-- [ ] **PERF-08**: Tất cả asset paths là relative (`./assets/`) không phải root-relative
+- [x] **PERF-07**: Tất cả filenames và folder names viết thường (lowercase)
+- [x] **PERF-08**: Tất cả asset paths là relative (`./assets/`) không phải root-relative
 - [ ] **PERF-09**: `.nojekyll` file tại root repo
 - [ ] **PERF-10**: Total page weight ≤800 KB; pricing content visible <1 giây
 
