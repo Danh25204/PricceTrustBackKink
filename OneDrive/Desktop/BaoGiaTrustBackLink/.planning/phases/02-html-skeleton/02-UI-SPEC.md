@@ -1,10 +1,11 @@
 ---
 phase: 2
 slug: html-skeleton
-status: draft
+status: approved
 shadcn_initialized: false
 preset: none
 created: 2026-05-19
+reviewed_at: 2026-05-19
 ---
 
 # Phase 2 — UI Design Contract: HTML Skeleton
