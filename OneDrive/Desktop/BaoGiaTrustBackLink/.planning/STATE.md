@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: ready_to_execute
-stopped_at: "Phase 2 planned — 4 plans in 2 waves, verification passed"
-last_updated: "2026-05-19T13:00:00Z"
+stopped_at: "Phase 2 complete — 4/4 plans done, 89 checks passed, human checkpoint pending"
+last_updated: "2026-05-19T14:00:00Z"
 last_activity: 2026-05-19
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 6
-  completed_plans: 2
-  percent: 17
+  total_plans: 10
+  completed_plans: 6
+  percent: 33
 ---
 
 # Project State: BaoGia TrustBackLink
@@ -21,35 +21,38 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-18)
 
 **Core value:** Khach hang phai hieu ngay goi nao phu hop va muon nhan @trustbacklink ngay sau khi xem trang.
-**Current focus:** Phase 2 — HTML Skeleton
+**Current focus:** Phase 2 complete — awaiting human checkpoint, then Phase 3 CSS Styling
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation)
-Plan: 2 of 2 in current phase
-Status: Ready to execute
+Phase: 2 of 6 (HTML Skeleton)
+Plan: 4 of 4 in current phase
+Status: All plans executed — human checkpoint required (see plan 02-04 Task 2)
 Last activity: 2026-05-19
 
-Progress: [██████████] 100%
+Progress: [█████████░] 33%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 1
-- Average duration: 12 min
-- Total execution time: 0.2 hours
+- Total plans completed: 6
+- Average duration: 5 min
+- Total execution time: 0.5 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/2 | 12 min | 12 min |
+| 01-foundation | 2/2 | 15 min | 7 min |
+| 02-html-skeleton | 4/4 | 18 min | 5 min |
 
-**Recent Trend:** 1 plan completed
+**Recent Trend:** 4 plans completed in Phase 2
 
-*Updated after each plan completion*
-| Phase 01-foundation P02 | 5min | 1 tasks | 1 files |
+| Phase 02 P01 | 5min | 1 task | 1 file |
+| Phase 02 P02 | 3min | 1 task | 1 file |
+| Phase 02 P03 | 5min | 2 tasks | 1 file |
+| Phase 02 P04 | 5min | 1 task | 1 file |
 
 ## Accumulated Context
 
@@ -66,14 +69,17 @@ Recent decisions affecting current work:
 - Plan 01-01: Google Fonts CSS2 API omits &subset=vietnamese — CSS2 serves unicode-range automatically
 - Plan 01-01: --bp-mobile token declared for docs only; literal 768px used in all @media conditions
 - Plan 01-02: .nojekyll committed before first push — Jekyll bypass permanent for all future phases
+- Plan 02: All Telegram CTAs use tg://resolve?domain=trustbacklink primary + data-fallback="https://t.me/trustbacklink"
+- Plan 02: HTML uses HTML entities (&gt;) for > in approval rate bullets to be spec-valid
+- Plan 02: #cta-float placed after </footer>, outside <main>; floating positioning handled in Phase 3 CSS
 
 ### Pending Todos
 
-None yet.
+- Human checkpoint: open index.html in browser and verify all sections readable (plan 02-04 Task 2)
 
 ### Blockers/Concerns
 
-- Open question: Logo asset confirmed available? (affects Phase 2 hero/header layout)
+- Open question: Logo asset confirmed available? (affects Phase 3 hero/header layout — broken img placeholder acceptable for Phase 2)
 - Open question: GitHub Pages URL confirmed as sub-path or custom domain? (affects relative path strategy)
 
 ## Deferred Items
@@ -86,6 +92,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-19T11:42:00Z
-Stopped at: Phase 1 complete — all 9 requirements verified, GitHub Pages live confirmed by user.
-Resume file: .planning/phases/02-html-skeleton/ (next phase)
+Last session: 2026-05-19T14:00:00Z
+Stopped at: Phase 2 all 4 plans executed — pending human checkpoint approval.
+Resume file: .planning/phases/02-html-skeleton/02-04-PLAN.md (checkpoint task)
+Next phase: .planning/phases/03-css-styling/ (after checkpoint approved)
