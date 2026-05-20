@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 5 planned — 3 plans across 3 waves ready to execute.
-last_updated: "2026-05-19T09:00:00.000Z"
-last_activity: 2026-05-19
+stopped_at: Phase 5 complete — all 3 plans executed (GSAP ticker, scroll animations, reduced-motion).
+last_updated: "2026-05-20T00:00:00.000Z"
+last_activity: 2026-05-20
 progress:
   total_phases: 6
-  completed_phases: 4
+  completed_phases: 5
   total_plans: 13
-  completed_plans: 10
-  percent: 67
+  completed_plans: 13
+  percent: 83
 ---
 
 # Project State: BaoGia TrustBackLink
@@ -25,10 +25,10 @@ See: .planning/PROJECT.md (updated 2026-05-18)
 
 ## Current Position
 
-Phase: 5 of 6 (GSAP Animations) — PLANNED, ready to execute
-Plan: 0 of 3 in Phase 5
-Status: Phase 5 planned — 3 plans written, verification passed
-Last activity: 2026-05-19
+Phase: 5 of 6 (GSAP Animations) — COMPLETE ✓
+Plan: 3 of 3 in Phase 5
+Status: Phase 5 complete — GSAP ticker wired, scroll animations live, reduced-motion handled
+Last activity: 2026-05-20
 
 Progress: [███████░░░] 67%
 
@@ -96,7 +96,7 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-05-19T08:30:00.000Z
-Stopped at: Phase 4 complete — scene.js, index.html canvas wiring, layout.css SECTION 10 done.
+Last session: 2026-05-20T00:00:00.000Z
+Stopped at: Phase 5 complete — GSAP ticker, ScrollTrigger animations, reduced-motion guard all done.
 Resume file: None
-Next phase: execute Phase 5 — /gsd:execute-phase 5
+Next phase: execute Phase 6 — /gsd:execute-phase 6
