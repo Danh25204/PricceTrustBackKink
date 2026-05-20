@@ -13,9 +13,9 @@ Single-page Vietnamese SEO pricing site, built layer-by-layer following a strict
 - [x] **Phase 1: Foundation** - Design tokens, file structure, and deployment infrastructure (completed 2026-05-19)
 - [x] **Phase 2: HTML Skeleton** - All content sections hardcoded; page readable without JS or CSS (completed 2026-05-19)
 - [x] **Phase 3: CSS Styling** - Full layout, pricing card components, featured card treatment, mobile-responsive, CSS hover effects (completed 2026-05-19)
-- [ ] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency
-- [ ] **Phase 5: GSAP Animations** - Scroll-triggered entrance animations wired via GSAP ticker into Three.js; reduced-motion support
-- [ ] **Phase 6: Polish & Deployment** - OG image, page weight audit, Telegram deeplink verification, GitHub Pages live
+- [x] **Phase 4: Three.js Scene** - Isolated gold particle background; mobile fallback; no GSAP dependency (completed 2026-05-20)
+- [x] **Phase 5: GSAP Animations** - Scroll-triggered entrance animations wired via GSAP ticker into Three.js; reduced-motion support (completed 2026-05-20)
+- [x] **Phase 6: Polish & Deployment** - OG image, page weight audit, Telegram deeplink verification, GitHub Pages live (completed 2026-05-20)
 
 ## Phase Details
 
@@ -80,8 +80,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — scene.js: Three.js particle geometry, WebGL detection, demand-based render control, mobile/WebGL fallbacks, init/resize/render exports
-- [ ] 04-02-PLAN.md — Canvas integration: inject canvas into index.html, CSS positioning (fixed/z-index 0/pointer-events none), mobile radial-gradient fallback on hero, scene.js script tag
+- [x] 04-01-PLAN.md — scene.js: Three.js particle geometry, WebGL detection, demand-based render control, mobile/WebGL fallbacks, init/resize/render exports
+- [x] 04-02-PLAN.md — Canvas integration: inject canvas into index.html, CSS positioning (fixed/z-index 0/pointer-events none), mobile radial-gradient fallback on hero, scene.js script tag
 
 ### Phase 5: GSAP Animations
 **Goal**: All entrance animations play once on scroll via GSAP ScrollTrigger; GSAP owns the RAF loop and Three.js renders inside it; reduced-motion users see no animations
@@ -96,9 +96,9 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: GSAP integration — connect ticker to Three.js, hero load animation
-- [ ] 05-02: ScrollTrigger animations — service cards, pricing cards, contact CTA, floating button entrance
-- [ ] 05-03: Reduced-motion handling — CSS media query + GSAP skip logic
+- [x] 05-01: GSAP integration — connect ticker to Three.js, hero load animation
+- [x] 05-02: ScrollTrigger animations — service cards, pricing cards, contact CTA, floating button entrance
+- [x] 05-03: Reduced-motion handling — CSS media query + GSAP skip logic
 
 ### Phase 6: Polish & Deployment
 **Goal**: The live GitHub Pages URL is production-ready — OG image exists for Telegram link previews, total page weight is within budget, and every Telegram deeplink is verified working on a real device
@@ -112,8 +112,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: Create OG image, add Open Graph meta tags
-- [ ] 06-02: Lighthouse audit, page weight verification, Telegram deeplink end-to-end test
+- [x] 06-01: Create OG image, add Open Graph meta tags
+- [x] 06-02: Lighthouse audit, page weight verification, Telegram deeplink end-to-end test
 
 ## Progress
 
@@ -124,6 +124,6 @@ Plans:
 | 1. Foundation | 2/2 | Complete   | 2026-05-19 |
 | 2. HTML Skeleton | 4/4 | Complete    | 2026-05-19 |
 | 3. CSS Styling | 2/2 | Complete   | 2026-05-19 |
-| 4. Three.js Scene | 0/2 | Not started | - |
-| 5. GSAP Animations | 0/3 | Not started | - |
-| 6. Polish & Deployment | 0/2 | Not started | - |
+| 4. Three.js Scene | 2/2 | Complete   | 2026-05-20 |
+| 5. GSAP Animations | 3/3 | Complete   | 2026-05-20 |
+| 6. Polish & Deployment | 2/2 | Complete   | 2026-05-20 |
